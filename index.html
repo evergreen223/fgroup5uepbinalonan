@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Eastern Pangasinan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header-logo">
+            <div class="logo-badge">U</div>
+            <div class="logo-text">University of<br>Eastern Pangasinan</div>
+        </div>
+        <nav class="nav-links">
+    <a onclick="showPage('home')">Home</a>
+    <div class="dropdown">
+        <a>About UEP</a>
+        <div class="dropdown-menu">
+            <a onclick="showPage('overview')">University Overview</a>
+            <a onclick="showPage('vm')">Vision & Mission</a>
+            <a onclick="showPage('facilities')">Facilities</a>
+            <a onclick="showPage('history')">History</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a>Courses Offered</a>
+        <div class="dropdown-menu">
+            <a onclick="showPage('education')">BSEd & BEEd</a>
+            <a onclick="showPage('hm')">BS Hospitality Management</a>
+            <a onclick="showPage('crim')">BS Criminology</a>
+            <a onclick="showPage('bsba')">BS Business Administration</a>
+            <a onclick="showPage('it')">BS Information Technology</a>
+            <a onclick="showPage('midwifery')">BS Midwifery</a>
+            <a onclick="showPage('accountancy')">BS Accountancy</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a>News</a>
+        <div class="dropdown-menu">
+            <a onclick="showPage('enrollmentNews')">Enrollment S.Y. 2026–2027</a>
+            <a onclick="showPage('shelp')">Project S.H.E.L.P 2.0</a>
+            <a onclick="showPage('building')">7-Storey Building Groundbreaking</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a>Student Portal</a>
+        <div class="dropdown-menu">
+            <a onclick="showPage('sis')">SIS Portal</a>
+            <a onclick="showPage('lms')">LMS Portal</a>
+        </div>
+    </div>
+    <a onclick="showPage('contact')">Contact Us</a>
+</nav>
+    </div>
+
+
+    <!-- SIDEBAR -->
+<div id="sidebar" class="sidebar">
+    <div id="mainMenu">
+        ...
+    </div>
+    <div id="aboutMenu" style="display:none;">
+        ...
+    </div>
+    <div id="coursesMenu" style="display:none;">
+        ...
+    </div>
+    <div id="newsMenu" style="display:none;">
+        ...
+    </div>
+    <div id="portalMenu" style="display:none;">
+        ...
+    </div>
+</div>
+
+    <!-- HOME -->
+<div id="home" class="page active">
+
+    <div class="hero" style="position: relative; overflow: hidden; min-height: 60vh;">
+
+        <!-- BACKGROUND VIDEO -->
+        <video autoplay muted loop playsinline
+            style="position: absolute; top: 50%; left: 50%;
+                   transform: translate(-50%, -50%);
+                   min-width: 100%; min-height: 100%; z-index: 0; object-fit: cover;">
+            <source src="UEPVID2.mp4" type="video/mp4">
+        </video>
+
+        <!-- Dark overlay -->
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.5); z-index: 1;"></div>
+
+        <div class="hero-bg-pattern" style="position: relative; z-index: 2;"></div>
+        <div class="hero-content" style="position: relative; z-index: 2;">
+            <div class="hero-eyebrow">Binalonan, Pangasinan</div>
+            <h1>Welcome to<br>University of Eastern Pangasinan</h1>
+            <p>Shaping future leaders through quality education and values.</p>
+        </div>
+
+    </div>
+
+    <div class="enroll-band">
+        <div class="enroll-badge">● Enrollment Open</div>
+        <h2>Online Enrollment Ongoing<br>S.Y. 2026–2027</h2>
+        <div class="enroll-buttons">
+            <button class="btn-primary" onclick="showPage('newStudent')">New Student</button>
+            <button class="btn-secondary" onclick="showPage('oldStudent')">Old Student</button>
+        </div>
+    </div>
+
+</div>
+
+    <!-- ABOUT PAGES -->
+    <div id="overview" class="page"><div class="page-wrap">
+        <div class="page-title-bar"><div class="breadcrumb">About UEP</div><h2>University Overview</h2></div>
+        <div class="content-card">
+            <img src="pic5.jpg" alt="Facility 1" style="width:100%; height:300px; object-fit:cover; border-radius:8px;">
+            <p>The University of Eastern Pangasinan is the first institution of higher education in the town of Binalonan and the second one in Pangasinan to adopt a public-private partnership wherein the government assumes substantial financial grants and private entities take on the operations of the university.</p>
+            <p>From its modest beginnings in an obscure building located in the old public market, UEP has emerged into a modern architectural display along MacArthur Highway in barangay Canarvacanan.</p>
+        </div>
+    </div>
+  </div></div>
+
+    <div id="vm" class="page"><div class="page-wrap">
+        <div class="page-title-bar"><div class="breadcrumb">About UEP</div><h2>Vision & Mission</h2></div>
+        <div class="content-card">
+            <h2>Vision</h2>
+            <p>A leading local university known to develop excellent and virtuous professionals who are catalysts of progress for both the local and global communities.</p>
+            <h2>Mission</h2>
+            <p>University of Eastern Pangasinan is dedicated to producing highly competent and morally responsible UEPians through innovation, industry-focused education, sustainable research, and values-based curriculum. We commit to shaping ethical trailblazers bringing our principle-centered culture defining our values of Maka-Diyos, Marunong and Malinis.
+
+
+</p>
+        </div>
+    </div></div>
+
+   <div id="facilities" class="page"><div class="page-wrap">
+    <div class="page-title-bar"><div class="breadcrumb">About UEP</div><h2>Facilities</h2></div>
+    <div class="content-card">
+        <p>The first of three towers was inaugurated in July 2012 and houses the university's academic departments. The building, which can accommodate 3,000 students, is also occupied by 36 classrooms, the administrative office, a library and demo laboratories.</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px;">
+            <img src="pic1.jpg" alt="Facility 1" style="width:100%; height:200px; object-fit:cover; border-radius:8px;">
+            <img src="pic2.jpg" alt="Facility 2" style="width:100%; height:200px; object-fit:cover; border-radius:8px;">
+            <img src="pic3.jpg" alt="Facility 3" style="width:100%; height:200px; object-fit:cover; border-radius:8px;">
+            <img src="pic4.jpg" alt="Facility 4" style="width:100%; height:200px; object-fit:cover; border-radius:8px;">
+        </div>
+    </div>
+</div></div>
+    <div id="history" class="page"><div class="page-wrap">
+        <div class="page-title-bar"><div class="breadcrumb">About UEP</div><h2>Brief History</h2></div>
+        <div class="content-card">
+            <p>The establishment of UEP began in 2005 following a dissertation paper authored by its founding president, Dr. Ramon V. Guico III. On December 10, 2019, Dr. Cherry Ibañez-Ultra assumed office as the 7th University President.</p>
+        </div>
+    </div></div>
+
+    <!-- COURSE PAGES -->
+    <div id="education" class="page"><div class="page-wrap">
+        <div class="page-title-bar"><div class="breadcrumb">Courses Offered</div><h2>Bachelor of Elementary & Secondary Education</h2></div>
+        <div class="content-card">
+            <img src="pic6 .jpg">
+            <p>4-year courses designed to prepare students for teaching in elementary and high schools. CHED-authorized programs.</p>
+            <p><strong>Career paths:</strong></p>
+            <span class="career-tag">Licensed Professional Teacher</span><span class="career-tag">Tutor</span><span class="career-tag">School Administrator</span>
+        </div>
+    </div></div>
+
+    <div id="hm" class="page"><div class="page-wrap">
+        <div class="page-title-bar"><div class="breadcrumb">Courses Offered</div><h2>BS Hospitality Management</h2></div>
+        <div class="content-card">
+            <img src="pic7.jpeg">
+            <p>The hospitality industry is a multifaceted system consisting of several sectors with airlines, hotels, resorts, travel agencies and tour operators taking up the greater bulk. The industry also goes beyond the business realm, extending to government and non-government agencies as well as educational institutions. The industry plays a pivotal role in uplifting a country’s living standards, generating national income and ensconcing a sense of cultural awareness and appreciation for the country’s natural heritage.</p>
+               UEP Bachelor of Science in Hospitality Management uses a two-pronged approach in preparing students for a career in the hospitality industry. It provides students with practical and managerial skills particularly in hotel, restaurant and resort operations. The course likewise offers relevant training related to the functions and operations of cruise lines, clubs, inns and motels. Students are introduced to basic concepts of Food and Beverage service, Housekeeping, Event Management, Banquet and Catering, and Commercial Cooking.</p>
+            <span class="career-tag">Hotel Manager</span><span class="career-tag">Chef</span><span class="career-tag">Flight Attendant</span><span class="career-tag">Event Coordinator</span>
+        </div>
+    </div></div>
+
+    <div id="crim" class="page"><div class="page-wrap">
+        <div class="page-title-bar"><div class="breadcrumb">Courses Offered</div><h2>BS Criminology</h2></div>
+        <div class="content-card">
+            <img src="pic8.jpg">
+            <p>The field of criminology is a study of crime and the different agencies of justice as they operate and react to crime, criminals and victims. It is therefore the mission of the Criminology Program to provide the community with professionally competent and morally upright graduates who can deliver efficient and effective services in crime prevention, crime detection and investigation, law enforcement, and custody and rehabilitation of offenders, among other things.</p>
+            <span class="career-tag">Police Officer</span><span class="career-tag">NBI Agent</span><span class="career-tag">Criminologist</span><span class="career-tag">Forensic Expert</span>
+        </div>
+    </div></div>
+
+    <div id="bsba" class="page"><div class="page-wrap">
+        <div class="page-title-bar"><div class="breadcrumb">Courses Offered</div><h2>BS Business Administration</h2></div>
+        <div class="content-card">
+            <img src="pic9.jpg">
+            <p>Business administration includes a great deal of problem solving and number crunching, so proficiency in math is always an asset. The University of Eastern Pangasinan offers Bachelor Degree in Business with a general knowledge base and students may specialize in a particular area of their choice. These programs introduce students to a wide range of principles ranging from politics, ethics, sensitivity, innovativeness, creativity and other dynamics enabling them to acquire a deeper appreciation of their interrelationships and their individual impact to an organization. Students may decide which areas of specialization to pursue based on their strengths and interest.</p>
+            <span class="career-tag">Business Manager</span><span class="career-tag">Entrepreneur</span><span class="career-tag">Marketing Specialist</span><span class="career-tag">Bank Officer</span>
+        </div>
+    </div></div>
+
+    <div id="it" class="page"><div class="page-wrap">
+        <div class="page-title-bar"><div class="breadcrumb">Courses Offered</div><h2>BS Information Technology</h2></div>
+        <div class="content-card">
+            <img src="pic10.jpg">
+            <p>University of Eastern Pangasinan to keep up with the evolving trends in the field of information and communications technology. CIT’s vision is to become a vibrant learning community where students are encouraged to examine, learn and excel in different domains of information and communications technology. To attain this vision, CIT provides a broad spectrum of academic disciplines, up-to-date practices and appropriate IT knowledge designed to train students and equip them with the skills needed to adapt in a highly dynamic culture and contribute to society as highly qualified IT professionals.</p>
+            <span class="career-tag">Web Developer</span><span class="career-tag">IT Support</span><span class="career-tag">Systems Analyst</span><span class="career-tag">Network Admin</span>
+        </div>
+    </div></div>
+
+    <div id="midwifery" class="page"><div class="page-wrap">
+        <div class="page-title-bar"><div class="breadcrumb">Courses Offered</div><h2>BS Midwifery</h2></div>
+        <div class="content-card">
+            <img src="pic11.jpg">
+            <p>Midwifery practice in the Philippines has been recognized as one of the primary healthcare services for the people. The role of midwives has been expanded to address the basic health service needs of mothers and their children, and ensure patient safety. Midwifery education must be able to respond to those needs by producing midwives who have relevant knowledge and skills and appropriate attitude necessary to deliver quality care with competency and dedication.</p>
+            UEP is committed in total formation of professional midwives, in meeting the changing and challenging demands of healthcare provisions; in living a life of virtue, excellence and service because the institution believes that Midwifery is a distinct profession with a specific scope of practice, roles and regulations, and a legislation which aims to promote, maintain, and restore health while providing a distinctive type of care that benefits women, newborns and their families.</p>
+            <span class="career-tag">Registered Midwife</span><span class="career-tag">Community Health Worker</span>
+        </div>
+    </div></div>
+
+    <div id="accountancy" class="page"><div class="page-wrap">
+        <div class="page-title-bar"><div class="breadcrumb">Courses Offered</div><h2>BS Accountancy</h2></div>
+        <div class="content-card">
+            <img src="pic12.jpg">
+            <p>As the economy continues to change, so is the need for people who can easily adapt to these changes and effectively lead an organization where they work. A course in business administration provides students with a goal-focused curriculum and training required to excel in the fields of business, industry and government. Most business administration degrees teaches students to be critical thinkers and innovative leaders by placing special emphasis on core areas like finance, marketing, economics, accounting, statistics, problem solving, human resources and decision-making. A career in Business Administration demands an enterprising attitude and the ability to thrive in stressful situations, collaborate with others and effectively delegate with authority.</p>
+            <span class="career-tag">Certified Public Accountant</span><span class="career-tag">Auditor</span><span class="career-tag">Tax Specialist</span>
+        </div>
+    </div></div>
+
+    <!-- NEWS PAGES -->
+    <div id="enrollmentNews" class="page"><div class="page-wrap">
+        <div class="page-title-bar"><div class="breadcrumb">Latest News</div><h2>Enrollment A.Y. 2026–2027</h2></div>
+        <div class="content-card">
+            <p>To all <strong>incoming freshmen and transferees</strong>, the University of Eastern Pangasinan opens its online registration starting February 19, 2026.</p>
+            <p>Students can now avail of free tuition and miscellaneous fees in accordance with <strong>R.A. 10931</strong> (Universal Access to Quality Tertiary Education Act).</p>
+        </div>
+    </div></div>
+
+    <div id="shelp" class="page"><div class="page-wrap">
+        <div class="page-title-bar"><div class="breadcrumb">Latest News</div><h2>Project S.H.E.L.P 2.0</h2></div>
+        <div class="content-card">
+            <p><em>April 10, 2025</em> — The University of Eastern Pangasinan, through its Office of Community Extension Services, successfully launched <strong>Project S.H.E.L.P 2.0</strong> (Sustainable Health, Education, Livelihood, and Peace) at Casantiaogan Elementary School.</p>
+        </div>
+    </div></div>
+
+    <div id="building" class="page"><div class="page-wrap">
+        <div class="page-title-bar"><div class="breadcrumb">Latest News</div><h2>7-Storey Building Groundbreaking</h2></div>
+        <div class="content-card">
+            <p>The University of Eastern Pangasinan officially broke ground on its upcoming <strong>7-storey academic building</strong> during a momentous ceremony held on May 30, 2025.</p>
+        </div>
+    </div></div>
+
+    <!-- PORTAL PAGES -->
+    <div id="sis" class="page"><div class="portal-wrap">
+        <div class="portal-header"><h2>SIS Portal</h2><p>Enrollment, grades & schedule</p></div>
+        <div class="portal-card">
+            <div class="form-group"><label>Student ID</label><input id="sisUser" placeholder="Enter your student ID"></div>
+            <div class="form-group"><label>Password</label><input id="sisPass" type="password" placeholder="Enter your password"></div>
+            <button class="btn-full" onclick="portalLogin('sis')">Login to SIS</button>
+            <div id="sisMsg" class="form-msg"></div>
+        </div>
+    </div></div>
+
+    <div id="lms" class="page"><div class="portal-wrap">
+        <div class="portal-header"><h2>LMS Portal</h2><p>Modules, quizzes & online classes</p></div>
+        <div class="portal-card">
+            <div class="form-group"><label>Student ID</label><input id="lmsUser" placeholder="Enter your student ID"></div>
+            <div class="form-group"><label>Password</label><input id="lmsPass" type="password" placeholder="Enter your password"></div>
+            <button class="btn-full" onclick="portalLogin('lms')">Login to LMS</button>
+            <div id="lmsMsg" class="form-msg"></div>
+        </div>
+    </div></div>
+
+    <!-- NEW STUDENT ENROLLMENT FORM -->
+    <div id="newStudent" class="page"><div class="enroll-form-wrap">
+        <div class="enroll-form-header">
+            <div class="enroll-form-badge">New Student</div>
+            <h2>Enrollment Form</h2>
+            <p>A.Y. 2026–2027 — Please fill in all required fields accurately.</p>
+        </div>
+        <div class="enroll-form-card">
+            <div class="form-section-title">Personal Information</div>
+            <div class="form-row three-col">
+                <div class="form-group"><label>First Name *</label><input id="n_fname" placeholder="e.g. Juan"></div>
+                <div class="form-group"><label>Middle Name</label><input id="n_mname" placeholder="e.g. Santos"></div>
+                <div class="form-group"><label>Last Name *</label><input id="n_lname" placeholder="e.g. Dela Cruz"></div>
+            </div>
+            <div class="form-row two-col">
+                <div class="form-group"><label>Extension Name</label>
+                    <select id="n_ext">
+                        <option value="">None</option>
+                        <option>Jr.</option>
+                        <option>Sr.</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row two-col">
+                <div class="form-group"><label>Date of Birth *</label><input id="n_dob" type="date"></div>
+                <div class="form-group"><label>Sex *</label>
+                    <select id="n_sex"><option value="">Select</option><option>Male</option><option>Female</option></select>
+                </div>
+            </div>
+
+            <div class="form-section-title">Contact Details</div>
+            <div class="form-row two-col">
+                <div class="form-group"><label>Contact Number *</label><input id="n_contact" placeholder="09XX XXX XXXX"></div>
+                <div class="form-group"><label>Email Address *</label><input id="n_email" type="email" placeholder="your@email.com"></div>
+            </div>
+            <div class="form-group"><label>Complete Address *</label><input id="n_address" placeholder="House No., Street, Barangay, Municipality, Province"></div>
+
+            <div class="form-section-title">Academic Information</div>
+            <div class="form-row two-col">
+                <div class="form-group"><label>Course Applied For *</label>
+                    <select id="n_course">
+                        <option value="">Select a course</option>
+                        <option>BSEd — Secondary Education</option>
+                        <option>BEEd — Elementary Education</option>
+                        <option>BS Hospitality Management</option>
+                        <option>BS Criminology</option>
+                        <option>BS Business Administration</option>
+                        <option>BS Information Technology</option>
+                        <option>BS Midwifery</option>
+                        <option>BS Accountancy</option>
+                        <option>BS Accounting Information System</option>
+                    </select>
+                </div>
+                <div class="form-group"><label>Student Type *</label>
+                    <select id="n_type"><option value="">Select</option><option>Freshman</option><option>Transferee</option></select>
+                </div>
+            </div>
+            <div class="form-group"><label>Last School Attended *</label><input id="n_school" placeholder="Name of your previous school"></div>
+
+            <div id="newEnrollMsg" class="form-msg"></div>
+            <button class="btn-full" onclick="submitEnrollment('new')">Submit Enrollment</button>
+            <p class="form-note">By submitting this form, you confirm that all information provided is accurate and true.</p>
+        </div>
+    </div></div>
+
+    <!-- OLD STUDENT RE-ENROLLMENT FORM -->
+    <div id="oldStudent" class="page"><div class="enroll-form-wrap">
+        <div class="enroll-form-header">
+            <div class="enroll-form-badge old">Returning Student</div>
+            <h2>Re-Enrollment Form</h2>
+            <p>A.Y. 2026–2027 — Please verify and update your information as needed.</p>
+        </div>
+        <div class="enroll-form-card">
+            <div class="form-section-title">Student Identification</div>
+            <div class="form-row two-col">
+                <div class="form-group"><label>Student ID Number *</label><input id="o_id" placeholder="e.g. UEP-2024-0001"></div>
+                <div class="form-group"><label>Last Name *</label><input id="o_lname" placeholder="e.g. Dela Cruz"></div>
+            </div>
+
+            <div class="form-section-title">Personal Information</div>
+            <div class="form-row three-col">
+                <div class="form-group"><label>First Name *</label><input id="o_fname" placeholder="e.g. Juan"></div>
+                <div class="form-group"><label>Middle Name</label><input id="o_mname" placeholder="e.g. Santos"></div>
+                <div class="form-group"><label>Sex *</label>
+                    <select id="o_sex"><option value="">Select</option><option>Male</option><option>Female</option></select>
+                </div>
+            </div>
+            <div class="form-row two-col">
+                <div class="form-group"><label>Extension Name</label>
+                    <select id="o_ext">
+                        <option value="">None</option>
+                        <option>Jr.</option>
+                        <option>Sr.</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section-title">Contact Details</div>
+            <div class="form-row two-col">
+                <div class="form-group"><label>Contact Number *</label><input id="o_contact" placeholder="09XX XXX XXXX"></div>
+                <div class="form-group"><label>Email Address *</label><input id="o_email" type="email" placeholder="your@email.com"></div>
+            </div>
+            <div class="form-group"><label>Complete Address *</label><input id="o_address" placeholder="House No., Street, Barangay, Municipality, Province"></div>
+
+            <div class="form-section-title">Academic Information</div>
+            <div class="form-row two-col">
+                <div class="form-group"><label>Course *</label>
+                    <select id="o_course">
+                        <option value="">Select a course</option>
+                        <option>BSEd — Secondary Education</option>
+                        <option>BEEd — Elementary Education</option>
+                        <option>BS Hospitality Management</option>
+                        <option>BS Criminology</option>
+                        <option>BS Business Administration</option>
+                        <option>BS Information Technology</option>
+                        <option>BS Midwifery</option>
+                        <option>BS Accountancy</option>
+                        <option>BS Accounting Information System</option>
+                    </select>
+                </div>
+                <div class="form-group"><label>Year Level *</label>
+                    <select id="o_year"><option value="">Select</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option></select>
+                </div>
+            </div>
+
+            <div id="oldEnrollMsg" class="form-msg"></div>
+            <button class="btn-full" onclick="submitEnrollment('old')">Submit Re-Enrollment</button>
+            <p class="form-note">By submitting this form, you confirm that all information provided is accurate and true.</p>
+        </div>
+    </div></div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page"><div class="contact-wrap">
+        <div class="contact-title"><h2>Contact Us</h2><p>We'd love to hear from you!</p></div>
+        <div class="contact-card">
+            <div class="form-group"><label>Full Name *</label><input id="cname" placeholder="Your full name"></div>
+            <div class="form-group"><label>Contact Number *</label><input id="cnumber" placeholder="09XX XXX XXXX"></div>
+            <div class="form-group"><label>Email Address *</label><input id="cemail" placeholder="your@email.com"></div>
+            <div class="form-group">
+                <label>Department *</label>
+                <select id="cdept">
+                    <option value="" disabled selected>Select a department</option>
+                    <option>Registrar</option>
+                    <option>Guidance Office</option><option>Admissions</option>
+                </select>
+            </div>
+            <div class="form-group"><label>Message *</label><textarea id="cmessage" placeholder="Write your message here..." rows="4"></textarea></div>
+            <div id="cmsg" class="form-msg"></div>
+            <button class="btn-full" onclick="sendMsg()">Send Message</button>
+        </div>
+        <div class="contact-info-row">
+            <div class="contact-info-item"><div class="ci-label">Address</div><div class="ci-value">Canarvacanan 2436 Binalonan, Philippines</div></div>
+            <div class="contact-info-item"><div class="ci-label">Phone</div><div class="ci-value">(075) 562 5874</div></div>
+            <div class="contact-info-item"><div class="ci-label">Facebook</div><div class="ci-value">UEPangBinalonan</div></div>
+        </div>
+    </div></div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-links">
+            <span onclick="showPage('home')">Home</span>
+            <span class="sep">|</span>
+            <span onclick="showPage('sis')">Portal</span>
+            <span class="sep">|</span>
+            <span onclick="showPage('contact')">Contact</span>
+        </div>
+        <p class="footer-copy">© 2026 University of Eastern Pangasinan. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        function openMenu() {
+            document.getElementById("sidebar").style.right = "0";
+            document.getElementById("overlay").classList.add("active");
+        }
+        function closeMenu() {
+            document.getElementById("sidebar").style.right = "-100%";
+            document.getElementById("overlay").classList.remove("active");
+        }
+        function backMenu() {
+            ["aboutMenu","coursesMenu","newsMenu","portalMenu"].forEach(function(id){
+                document.getElementById(id).style.display = "none";
+            });
+            document.getElementById("mainMenu").style.display = "block";
+        }
+        function openSubMenu(menuId) {
+            document.getElementById("mainMenu").style.display = "none";
+            document.getElementById(menuId).style.display = "block";
+        }
+        function showPage(pageId) {
+            document.querySelectorAll(".page").forEach(function(p){ p.classList.remove("active"); });
+            document.getElementById(pageId).classList.add("active");
+            closeMenu(); backMenu(); window.scrollTo(0,0);
+        }
+        function submitEnrollment(type) {
+            var msg, fields;
+            if (type === 'new') {
+                msg = document.getElementById("newEnrollMsg");
+                fields = ["n_fname","n_lname","n_dob","n_sex","n_contact","n_email","n_address","n_course","n_type","n_school"];
+            } else {
+                msg = document.getElementById("oldEnrollMsg");
+                fields = ["o_id","o_lname","o_fname","o_sex","o_contact","o_email","o_address","o_course","o_year"];
+            }
+            msg.className = "form-msg";
+            var hasEmpty = fields.some(function(id){ return !document.getElementById(id).value; });
+            if (hasEmpty) {
+                msg.textContent = "❌ Please fill in all required fields.";
+                msg.classList.add("error");
+            } else {
+                msg.textContent = type === 'new'
+                    ? "✅ Enrollment submitted! You will receive a confirmation via email."
+                    : "✅ Re-enrollment submitted! You will receive a confirmation via email.";
+                msg.classList.add("success");
+                fields.forEach(function(id){ document.getElementById(id).value = ""; });
+            }
+        }
+        function portalLogin(type) {
+            var u = document.getElementById(type+"User").value;
+            var p = document.getElementById(type+"Pass").value;
+            var msg = document.getElementById(type+"Msg");
+            msg.className = "form-msg";
+            if (!u || !p) { msg.textContent = "❌ Please fill in all fields."; msg.classList.add("error"); }
+            else { msg.textContent = "✅ Login successful! Redirecting to "+type.toUpperCase()+"..."; msg.classList.add("success"); }
+        }
+        function sendMsg() {
+            var fields = ["cname","cnumber","cemail","cdept","cmessage"];
+            var msg = document.getElementById("cmsg");
+            msg.className = "form-msg";
+            if (fields.some(function(id){ return !document.getElementById(id).value; })) {
+                msg.textContent = "❌ Please fill in all required fields."; msg.classList.add("error");
+            } else {
+                msg.textContent = "✅ Message sent! We will get back to you soon."; msg.classList.add("success");
+                fields.forEach(function(id){ document.getElementById(id).value = ""; });
+            }
+        }
+    </script>
+</body>
+</html>
