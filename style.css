@@ -82,22 +82,9 @@ html {
     color: white;
 }
 
-/* Hide burger on desktop */
-.menu-btn {
-    display: none;
-    align-items: center; gap: 8px;
-    cursor: pointer; font-size: 13px; font-weight: 500;
-    color: var(--text); padding: 8px 16px;
-    border: 1px solid var(--border); border-radius: 6px;
-    transition: all 0.2s;
-}
-
-.menu-btn:hover { background: var(--red); color: white; border-color: var(--red); }
-
 /* Hide nav on mobile, show burger */
 @media (max-width: 768px) {
     .nav-links { display: none; }
-    .menu-btn { display: flex; }
 }
 
         /* SIDEBAR */
